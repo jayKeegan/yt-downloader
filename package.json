@@ -1,0 +1,27 @@
+{
+  "name": "yt-downloader",
+  "description": "Download videos from YouTube using TypeScript.",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayKeegan/yt-downloader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayKeegan/yt-downloader/issues"
+  },
+  "homepage": "https://github.com/jayKeegan/yt-downloader#readme"
+}
