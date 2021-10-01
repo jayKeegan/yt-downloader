@@ -3,7 +3,7 @@ import fs from 'fs'; // import fs
 import chalk from 'chalk';
 
 const regex = /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/
-const url = 'https://www.youtube.com/watch?v=xvltG-i6AS0'; // url of YouTube video to download
+const url = ''; // url of YouTube video to download
 
 // confirm URL is a valid YouTube URL.
 if(!regex.test(url)) {
@@ -12,7 +12,7 @@ if(!regex.test(url)) {
 }
 
 const fileName = `${new Date().getDate() < 9 ? "0"+new Date().getDate() : new Date().getDate()}-${new Date().getDate() < 9 ? "0"+new Date().getMonth() : new Date().getMonth()}-${new Date().getFullYear()}_${new Date().getTime()}`; // name of file to store video in
-const extension = 'mp4'; // file extension
+const extension = ''; // file extension
 
 // download and save
 let video = ytdl(url).pipe(fs.createWriteStream(`./videos/${fileName}.${extension}`))
